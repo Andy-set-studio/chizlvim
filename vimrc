@@ -1,3 +1,17 @@
+" Vundle start
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" Define plugins
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+
+" Vundle end 
+call vundle#end()
+filetype plugin indent on
+
 " Set color scheme
 colorscheme Tomorrow-Night
 
@@ -25,10 +39,6 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-filetype plugin indent on
-
-" Set pathogen settings
-execute pathogen#infect()
 
 " Set syntastic settings
 syntax on
