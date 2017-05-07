@@ -21,14 +21,11 @@ set backspace=indent,eol,start
 
 " Set tab settings
 set autoindent
-set noexpandtab
 set tabstop=4
+set softtabstop=4
 set shiftwidth=4
+set expandtab
 filetype plugin indent on
-
-" Set indent guide
-set listchars=tab:\¦\ 
-set list
 
 " Set pathogen settings
 execute pathogen#infect()
