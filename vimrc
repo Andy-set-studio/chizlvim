@@ -7,6 +7,10 @@ call vundle#begin()
 " Define plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'vim-syntastic/syntastic' 
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 " Vundle end 
 call vundle#end()
@@ -50,6 +54,9 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" Set vim-jsx settings
+let g:jsx_ext_required = 0
 
 " Set autocomplete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
