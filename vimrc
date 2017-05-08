@@ -7,10 +7,11 @@ call vundle#begin()
 " Define plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'hail2u/vim-css3-syntax'
+"Plugin 'hail2u/vim-css3-syntax'
 Plugin 'vim-syntastic/syntastic' 
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
+"Plugin 'pangloss/vim-javascript'
+"Plugin 'mxw/vim-jsx'
+Plugin 'sheerun/vim-polyglot'
 
 " Vundle end 
 call vundle#end()
@@ -64,5 +65,5 @@ autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-autocmd BufNewFile,BufFilePre,BufRead *.json set filetype=javascript
-autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
+"autocmd BufNewFile,BufFilePre,BufRead *.json set filetype=javascript
+"autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown

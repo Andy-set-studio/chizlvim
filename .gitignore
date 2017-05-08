@@ -1,3 +1,6 @@
 # Ignore plugin dirs
 bundle
 autoload
+
+# Other misc ignoring
+.netrwhist
