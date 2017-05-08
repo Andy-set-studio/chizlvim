@@ -58,8 +58,9 @@ let g:syntastic_check_on_wq = 0
 " Set vim-jsx settings
 let g:jsx_ext_required = 0
 
-" Set autocomplete
+" Set autocomplete and filetype settings
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd BufNewFile,BufRead *.json set ft=javascript
