@@ -63,4 +63,5 @@ autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-autocmd BufNewFile,BufRead *.json set ft=javascript
+autocmd BufNewFile,BufFilePre,BufRead *.json set filetype=javascript
+autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
