@@ -63,7 +63,3 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
-" Keybindings
-
-" Echo aria-hidden etc on Alt+h
-map <˙> :echo 'aria mate' 
