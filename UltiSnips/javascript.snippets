@@ -1,0 +1,31 @@
+snippet rc "Create a stub React component" 
+/*------------------------------------*\
+	MODULES
+\*------------------------------------*/
+import React from 'react';
+
+class $1 extends React.Component {
+
+	constructor(props) {
+		super(props);
+	}
+
+	componentWillMount() {
+		let self = this;
+		
+		// Set default state 
+		self.setState({
+		});
+	}
+
+	render() {
+		let self = this;
+
+		return (
+			<div></div>
+		);
+	}
+}
+
+export default $1;
+endsnippet
