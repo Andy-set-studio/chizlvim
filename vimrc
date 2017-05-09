@@ -63,3 +63,7 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
+" Syntax overrides
+
+" Prevent underlines in markup
+let html_no_rendering=1
