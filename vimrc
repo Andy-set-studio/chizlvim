@@ -21,7 +21,7 @@ colorscheme Tomorrow-Night
 set number
 set nowrap
 set showbreak=+++
-set textwidth=100
+set textwidth=0
 set showmatch
 set visualbell
 set hlsearch
@@ -62,3 +62,8 @@ autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
+" Keybindings
+
+" Echo aria-hidden etc on Alt+h
+map <˙> :echo 'aria mate' 
