@@ -9,6 +9,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-syntastic/syntastic' 
 Plugin 'sheerun/vim-polyglot'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " Vundle end 
 call vundle#end()
@@ -56,6 +58,13 @@ let g:syntastic_html_tidy_quiet_messages = { 'level': 'warnings' }
 
 " Set vim-jsx settings
 let g:jsx_ext_required = 0
+
+" Set UltiSnips settings
+let g:UltiSnipsExpandTrigger='<tab>'
+let g:UltiSnipsJumpForwardTrigger='<c-b>'
+let g:UltiSnipsJumpBackwardTrigger='<c-z>'
+let g:UltiSnipsEditSplit='vertical'
+let g:UltiSnipsSnippetDirectories=['UltiSnips']
 
 " Set autocomplete and filetype settings
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
