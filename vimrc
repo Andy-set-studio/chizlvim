@@ -79,3 +79,6 @@ let html_no_rendering=1
 
 " Prevent comment chars been added on new line creation
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" When a curly brace pair is added, add a new tabbed line inside them
+inoremap {<CR> {<CR>}<Esc>O<BS><Tab>
