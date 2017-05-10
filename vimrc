@@ -76,3 +76,6 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 " Prevent underlines in markup
 let html_no_rendering=1
+
+" Prevent comment chars been added on new line creation
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
