@@ -84,5 +84,11 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " When a curly brace pair is added, add a new tabbed line inside them
 inoremap {<CR> {<CR>}<Esc>O<BS><Tab>
 
-" Keymappings 
+" Keymappings
+
+" Toggle NERDTree
 map <C-b> :NERDTreeToggle<CR>
+
+" Indent Guides
+set listchars=eol: ,tab:>·,trail: ,extends:>,precedes:<,space:·
+set list
