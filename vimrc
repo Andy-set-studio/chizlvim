@@ -11,6 +11,7 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'scrooloose/nerdtree'
 
 " Vundle end 
 call vundle#end()
@@ -82,3 +83,6 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " When a curly brace pair is added, add a new tabbed line inside them
 inoremap {<CR> {<CR>}<Esc>O<BS><Tab>
+
+" Keymappings 
+map <C-b> :NERDTreeToggle<CR>
