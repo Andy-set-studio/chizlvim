@@ -18,7 +18,7 @@ call vundle#end()
 filetype plugin indent on
 
 " Set color scheme
-colorscheme vwilight
+colorscheme Tomorrow-Night
 
 " Set core editor settings
 set number
