@@ -18,7 +18,7 @@ call vundle#end()
 filetype plugin indent on
 
 " Set color scheme
-colorscheme Tomorrow-Night
+colorscheme vwilight
 
 " Set core editor settings
 set number
@@ -90,5 +90,5 @@ inoremap {<CR> {<CR>}<Esc>O<BS><Tab>
 map <C-b> :NERDTreeToggle<CR>
 
 " Indent Guides
-set listchars=eol: ,tab:>·,trail: ,extends:>,precedes:<,space:·
-set list
+" set listchars=eol: ,tab:>·,trail: ,extends:>,precedes:<,space:·
+" set list
