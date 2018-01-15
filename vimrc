@@ -84,6 +84,10 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " When a curly brace pair is added, add a new tabbed line inside them
 inoremap {<CR> {<CR>}<Esc>O<BS><Tab>
 
+" Set syntastic to passive mode by default. Shortcut ctrl+w E will make it active: https://stackoverflow.com/a/21434697/2219969
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
+
 " Keymappings
 
 " Toggle NERDTree
