@@ -12,6 +12,8 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'scrooloose/nerdtree'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " Vundle end 
 call vundle#end()
