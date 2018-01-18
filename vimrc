@@ -14,6 +14,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'hail2u/vim-css3-syntax'
 
 " Vundle end 
 call vundle#end()
