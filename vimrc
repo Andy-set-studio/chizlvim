@@ -16,6 +16,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'godlygeek/tabular'
+Plugin 'scrooloose/nerdcommenter'
 
 " Vundle end 
 call vundle#end()
@@ -104,6 +105,11 @@ map <C-b> :NERDTreeToggle<CR>
 
 " Run Tabular align function. After you need to provide the separator such as = or : or =>
 map <C-a> :Tab /
+
+" NERDCommenter 
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+
 
 " Indent Guides
 " set listchars=eol: ,tab:>·,trail: ,extends:>,precedes:<,space:·
