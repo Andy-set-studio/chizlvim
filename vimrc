@@ -95,8 +95,9 @@ let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': [],'passive_f
 nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
 
 " Set HTML syntax for odd filetypes
-autocmd BufNewFile,BufRead *.html.twig   set syntax=html
-autocmd BufNewFile,BufRead *.njk   set syntax=html
+autocmd BufNewFile,BufRead *.html.twig   set syntax=htmldjango
+autocmd BufNewFile,BufRead *.njk   set syntax=htmldjango
+autocmd BufNewFile,BufRead *.html   set syntax=htmldjango
 
 " Keymappings
 
