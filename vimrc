@@ -17,6 +17,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'godlygeek/tabular'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'yegappan/mru'
 
 " Vundle end 
 call vundle#end()
@@ -106,6 +107,9 @@ map <C-b> :NERDTreeToggle<CR>
 
 " Run Tabular align function. After you need to provide the separator such as = or : or =>
 map <C-a> :Tab /
+
+" Show most recently opened/edited files
+map <C-m> :MRU<CR>
 
 " NERDCommenter 
 let g:NERDSpaceDelims = 1
