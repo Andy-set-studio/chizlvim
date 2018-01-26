@@ -111,6 +111,8 @@ map <C-a> :Tab /
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 
+" Tweak clipboard 
+:set clipboard=unnamed
 
 " Indent Guides
 " set listchars=eol: ,tab:>·,trail: ,extends:>,precedes:<,space:·
