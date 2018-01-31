@@ -18,6 +18,7 @@ Plugin 'hail2u/vim-css3-syntax'
 Plugin 'godlygeek/tabular'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'yegappan/mru'
+Plugin 'Yggdroot/indentLine'
 
 " Vundle end 
 call vundle#end()
