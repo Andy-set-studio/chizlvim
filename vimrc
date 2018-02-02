@@ -19,6 +19,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'yegappan/mru'
 Plugin 'Yggdroot/indentLine'
+Plugin 'chrisbra/Colorizer'
 
 " Vundle end 
 call vundle#end()
@@ -111,6 +112,9 @@ map <C-a> :Tab /
 
 " Show most recently opened/edited files
 map <C-m> :MRU<CR>
+
+" Highlight document colors 
+map <C-h> :ColorHighlight<CR>
 
 " NERDCommenter 
 let g:NERDSpaceDelims = 1
