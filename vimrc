@@ -123,6 +123,7 @@ let g:NERDCompactSexyComs = 1
 " Tweak clipboard 
 :set clipboard=unnamed
 
-" Indent Guides
-" set listchars=eol: ,tab:>·,trail: ,extends:>,precedes:<,space:·
-" set list
+" Enable omnicomplete
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+set completeopt-=preview
