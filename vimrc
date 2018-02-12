@@ -120,6 +120,14 @@ map <C-h> :ColorHighlight<CR>
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 
+" CtrlP settings
+set wildignore+=*/tmp/*,*/node_modules/*,*.so,*.swp,*.zip
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+
 " Tweak clipboard 
 :set clipboard=unnamed
 
