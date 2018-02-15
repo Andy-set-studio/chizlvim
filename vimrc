@@ -20,6 +20,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'yegappan/mru'
 Plugin 'Yggdroot/indentLine'
 Plugin 'chrisbra/Colorizer'
+Plugin 'heavenshell/vim-jsdoc'
 
 " Vundle end 
 call vundle#end()
@@ -115,6 +116,9 @@ map <C-m> :MRU<CR>
 
 " Highlight document colors 
 map <C-h> :ColorHighlight<CR>
+
+" Add a JS Doc
+map <C-j> :JsDoc<CR>
 
 " NERDCommenter 
 let g:NERDSpaceDelims = 1
