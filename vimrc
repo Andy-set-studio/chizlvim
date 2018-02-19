@@ -21,6 +21,8 @@ Plugin 'yegappan/mru'
 Plugin 'Yggdroot/indentLine'
 Plugin 'chrisbra/Colorizer'
 Plugin 'heavenshell/vim-jsdoc'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 " Vundle end 
 call vundle#end()
@@ -69,6 +71,10 @@ let g:syntastic_javascript_checkers=['eslint']
 
 " Set vim-jsx settings
 let g:jsx_ext_required = 0
+highlight link xmlEndTag xmlTag
+
+" JS setting 
+let g:javascript_plugin_jsdoc = 1
 
 " Set UltiSnips settings
 let g:UltiSnipsExpandTrigger='<tab>'
