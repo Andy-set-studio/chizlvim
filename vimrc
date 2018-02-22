@@ -23,6 +23,7 @@ Plugin 'chrisbra/Colorizer'
 Plugin 'heavenshell/vim-jsdoc'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'prettier/vim-prettier'
 
 " Vundle end 
 call vundle#end()
