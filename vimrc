@@ -24,6 +24,7 @@ Plugin 'heavenshell/vim-jsdoc'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'prettier/vim-prettier'
+Plugin 'sumpygump/php-documentor-vim'
 
 " Vundle end 
 call vundle#end()
@@ -126,6 +127,11 @@ map <C-h> :ColorHighlight<CR>
 
 " Add a JS Doc
 map <C-j> :JsDoc<CR>
+
+" Add a PHP doc
+au BufRead,BufNewFile *.php inoremap <buffer> <C-P> :call PhpDoc()<CR>
+au BufRead,BufNewFile *.php nnoremap <buffer> <C-P> :call PhpDoc()<CR>
+au BufRead,BufNewFile *.php vnoremap <buffer> <C-P> :call PhpDocRange()<CR>
 
 " NERDCommenter 
 let g:NERDSpaceDelims = 1
