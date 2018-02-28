@@ -129,9 +129,9 @@ map <C-h> :ColorHighlight<CR>
 map <C-j> :JsDoc<CR>
 
 " Add a PHP doc
-au BufRead,BufNewFile *.php inoremap <buffer> <C-P> :call PhpDoc()<CR>
-au BufRead,BufNewFile *.php nnoremap <buffer> <C-P> :call PhpDoc()<CR>
-au BufRead,BufNewFile *.php vnoremap <buffer> <C-P> :call PhpDocRange()<CR>
+au BufRead,BufNewFile *.php inoremap <buffer> <C-j> :call PhpDoc()<CR>
+au BufRead,BufNewFile *.php nnoremap <buffer> <C-j> :call PhpDoc()<CR>
+au BufRead,BufNewFile *.php vnoremap <buffer> <C-j> :call PhpDocRange()<CR>
 
 " NERDCommenter 
 let g:NERDSpaceDelims = 1
