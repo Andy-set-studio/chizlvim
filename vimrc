@@ -145,6 +145,9 @@ let g:ctrlp_custom_ignore = {
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
+" Prettier settings
+let g:prettier#config#tab_width = 4
+
 " Tweak clipboard 
 :set clipboard=unnamed
 
