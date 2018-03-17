@@ -358,6 +358,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("javascriptNull", s:orange, "", "")
 	call <SID>X("javascriptGlobal", s:blue, "", "")
 	call <SID>X("javascriptStatement", s:red, "", "")
+	call <SID>X("jsStorageClass", s:pink, "", "")
+	call <SID>X("jsThis", s:pink, "", "")
+    call <SID>X("jsOperator", s:foreground, "", "")
+    call <SID>X("jsFuncCall", s:orange, "", "")
 
 	" CoffeeScript Highlighting
 	call <SID>X("coffeeRepeat", s:purple, "", "")
