@@ -31,7 +31,10 @@ call vundle#end()
 filetype plugin indent on
 
 " Set color scheme
-colorscheme Tomorrow-Night
+colorscheme ChizlPanda
+
+" Airline theme
+let g:airline_theme='monochrome'
 
 " Set core editor settings
 set number
