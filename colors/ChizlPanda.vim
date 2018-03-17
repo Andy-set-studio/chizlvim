@@ -6,7 +6,7 @@ let s:foreground = "c5c8c6"
 let s:background = "141414"
 let s:selection = "373b41"
 let s:line = "282a2e"
-let s:comment = "c2d0a4"
+let s:comment = "676b79"
 let s:red = "ec2864"
 let s:orange = "ffb86c"
 let s:yellow = "ffcc95"
@@ -14,6 +14,7 @@ let s:green = "19f9d8"
 let s:aqua = "6fc1ff"
 let s:blue = "66b8fa"
 let s:purple = "b084eb"
+let s:pink = "ff75b5"
 let s:window = "4d5057"
 
 " Console 256 Colours
@@ -273,18 +274,18 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Todo", s:comment, s:background, "")
 	call <SID>X("Title", s:comment, "", "")
 	call <SID>X("Identifier", s:red, "", "none")
-	call <SID>X("Statement", s:purple, "", "")
-	call <SID>X("Conditional", s:purple, "", "")
+	call <SID>X("Statement", s:pink, "", "")
+	call <SID>X("Conditional", s:pink, "", "")
 	call <SID>X("Repeat", s:foreground, "", "")
 	call <SID>X("Structure", s:purple, "", "")
-	call <SID>X("Function", s:blue, "", "")
+	call <SID>X("Function", s:pink, "", "")
 	call <SID>X("Constant", s:orange, "", "")
 	call <SID>X("Keyword", s:orange, "", "")
 	call <SID>X("String", s:green, "", "")
 	call <SID>X("Special", s:foreground, "", "")
 	call <SID>X("PreProc", s:purple, "", "")
 	call <SID>X("Operator", s:aqua, "", "none")
-	call <SID>X("Type", s:blue, "", "none")
+	call <SID>X("Type", s:foreground, "", "none")
 	call <SID>X("Define", s:purple, "", "none")
 	call <SID>X("Include", s:blue, "", "")
 	"call <SID>X("Ignore", "666666", "", "")
@@ -367,8 +368,11 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	" HTML Highlighting
 	call <SID>X("htmlTag", s:red, "", "")
 	call <SID>X("htmlTagName", s:red, "", "")
-	call <SID>X("htmlArg", s:red, "", "")
+	call <SID>X("htmlArg", s:orange, "", "")
 	call <SID>X("htmlScriptTag", s:red, "", "")
+    
+    " CSS Highlighting 
+    call <SID>X("cssBraces", s:foreground, "", "")
 
 	" Diff Highlighting
 	call <SID>X("diffAdd", "", "4c4e39", "")

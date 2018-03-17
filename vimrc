@@ -25,6 +25,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'prettier/vim-prettier'
 Plugin 'sumpygump/php-documentor-vim'
+Plugin 'cakebaker/scss-syntax.vim'
 
 " Vundle end 
 call vundle#end()
@@ -158,3 +159,8 @@ let g:prettier#config#tab_width = 4
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 set completeopt-=preview
+
+" Show which color scheme settings the highlighted character/word is using 
+map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
