@@ -2,7 +2,7 @@
 " It's a crude re-work of the Tomorrow-Night.vim color scheme
 
 " Default GUI Colours
-let s:foreground = "c5c8c6"
+let s:foreground = "f3f3f3"
 let s:background = "141414"
 let s:selection = "373b41"
 let s:line = "282a2e"
@@ -306,6 +306,15 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("phpConditional", s:purple, "", "")
 	call <SID>X("phpStatement", s:purple, "", "")
 	call <SID>X("phpMemberSelector", s:foreground, "", "")
+    call <SID>X("phpInclude", s:pink, "", "")
+    call <SID>X("phpKeyword", s:orange, "", "")
+    call <SID>X("phpUseClass", s:yellow, "", "")
+    call <SID>X("phpClassExtends", s:pink, "", "")
+    call <SID>X("phpType", s:orange, "", "")
+    call <SID>X("phpFunction", s:blue, "", "")
+    call <SID>X("phpStaticClasses", s:orange, "", "")
+    call <SID>X("phpMethod", s:blue, "", "")
+    call <SID>X("phpIdentifier", s:pink, "", "")
 
 	" Ruby Highlighting
 	call <SID>X("rubySymbol", s:green, "", "")

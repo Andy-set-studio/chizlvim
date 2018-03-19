@@ -81,6 +81,7 @@ highlight link xmlEndTag xmlTag
 
 " JS setting 
 let g:javascript_plugin_jsdoc = 1
+let g:jsdoc_enable_es6=1
 
 " Set UltiSnips settings
 let g:UltiSnipsExpandTrigger='<tab>'
