@@ -368,7 +368,12 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     " Django highlighting 
     call <SID>X("djangoTagBlock", s:foreground, "", "")
     call <SID>X("djangoStatement", s:pink, "", "")
-
+    
+    " (S)CSS highlighting 
+    call <SID>X("scssAmpersand", s:foreground, "", "")
+    call <SID>X("scssInclude", s:orange, "", "")
+    call <SID>X("cssPseudoClassId", s:red, "", "")
+    
 	" CoffeeScript Highlighting
 	call <SID>X("coffeeRepeat", s:purple, "", "")
 	call <SID>X("coffeeConditional", s:purple, "", "")
