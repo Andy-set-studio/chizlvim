@@ -364,6 +364,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("jsFuncCall", s:orange, "", "")
 	call <SID>X("jsClassMethodType", s:pink, "", "")
 	call <SID>X("jsNull", s:red, "", "")
+    
+    " Django highlighting 
+    call <SID>X("djangoTagBlock", s:foreground, "", "")
+    call <SID>X("djangoStatement", s:pink, "", "")
 
 	" CoffeeScript Highlighting
 	call <SID>X("coffeeRepeat", s:purple, "", "")
