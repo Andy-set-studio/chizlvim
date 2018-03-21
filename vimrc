@@ -35,7 +35,7 @@ filetype plugin indent on
 colorscheme ChizlPanda
 
 " Airline theme
-let g:airline_theme='monochrome'
+let g:airline_theme='sierra'
 
 " Set core editor settings
 set number
