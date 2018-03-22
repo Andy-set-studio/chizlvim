@@ -377,7 +377,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     " Django highlighting 
     call <SID>X("djangoTagBlock", s:foreground, "", "")
     call <SID>X("djangoStatement", s:pink, "", "")
-    
+    call <SID>X("djangoVarBlock", s:foreground, "", "")
+
     " (S)CSS highlighting 
     call <SID>X("scssAmpersand", s:foreground, "", "")
     call <SID>X("scssInclude", s:orange, "", "")
