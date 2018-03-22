@@ -359,7 +359,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
 	" JavaScript Highlighting
 	call <SID>X("javaScriptBraces", s:foreground, "", "")
-	call <SID>X("javaScriptFunction", s:purple, "", "")
+	call <SID>X("javaScriptFunction", s:pink, "", "")
 	call <SID>X("javaScriptConditional", s:purple, "", "")
 	call <SID>X("javaScriptRepeat", s:purple, "", "")
 	call <SID>X("javaScriptNumber", s:orange, "", "")
@@ -373,6 +373,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("jsFuncCall", s:orange, "", "")
 	call <SID>X("jsClassMethodType", s:pink, "", "")
 	call <SID>X("jsNull", s:red, "", "")
+	call <SID>X("jsFunction", s:pink, "", "")
     
     " Django highlighting 
     call <SID>X("djangoTagBlock", s:foreground, "", "")
