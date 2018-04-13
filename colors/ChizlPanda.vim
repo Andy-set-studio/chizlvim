@@ -315,6 +315,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("phpStaticClasses", s:orange, "", "")
     call <SID>X("phpMethod", s:blue, "", "")
     call <SID>X("phpIdentifier", s:pink, "", "")
+    call <SID>X("phpOperator", s:foreground, "", "")
 
 	" Ruby Highlighting
 	call <SID>X("rubySymbol", s:green, "", "")
