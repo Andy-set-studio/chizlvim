@@ -32,7 +32,15 @@ call vundle#end()
 filetype plugin indent on
 
 " Set color scheme
-colorscheme ChizlPanda
+colorscheme Tomorrow-Night
+
+" Operator mono tweaks
+hi htmlArg gui=italic
+hi Comment gui=italic
+hi Type    gui=italic
+hi htmlArg cterm=italic
+hi Comment cterm=italic
+hi Type    cterm=italic
 
 " Airline theme
 let g:airline_theme='sierra'

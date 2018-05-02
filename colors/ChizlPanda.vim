@@ -23,6 +23,7 @@ if !has("gui_running")
 	let s:window = "5e5e5e"
 	let s:line = "3a3a3a"
 	let s:selection = "585858"
+    let s:terminal_italic=1
 end
 
 hi clear
