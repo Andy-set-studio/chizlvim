@@ -32,7 +32,7 @@ call vundle#end()
 filetype plugin indent on
 
 " Set color scheme
-colorscheme Tomorrow-Night
+colorscheme ChizlPanda
 
 " Operator mono tweaks
 hi htmlArg gui=italic
