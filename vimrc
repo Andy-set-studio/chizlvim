@@ -168,7 +168,7 @@ map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans
 " Make operator mono do its thing
 hi htmlArg gui=italic
 hi Comment gui=italic
-hi Type    gui=italic
+" hi Type    gui=italic
 hi htmlArg cterm=italic
 hi Comment cterm=italic
-hi Type    cterm=italic
+" hi Type    cterm=italic
