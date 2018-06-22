@@ -3,10 +3,10 @@
 
 " Default GUI Colours
 let s:foreground = "f3f3f3"
-let s:background = "292A2C"
+let s:background = "212121"
 let s:selection = "373b41"
 let s:line = "282a2e"
-let s:comment = "676b79"
+let s:comment = "10ac84"
 let s:red = "ec2864"
 let s:orange = "ffb86c"
 let s:yellow = "ffcc95"
@@ -19,7 +19,7 @@ let s:window = "4d5057"
 
 " Console 256 Colours
 if !has("gui_running")
-	let s:background = "292A2C"
+	let s:background = "212121"
 	let s:window = "5e5e5e"
 	let s:line = "3a3a3a"
 	let s:selection = "585858"
@@ -523,5 +523,3 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	delf <SID>grey_level
 	delf <SID>grey_number
 endif
-
-set background=dark
