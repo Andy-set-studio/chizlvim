@@ -26,6 +26,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'prettier/vim-prettier'
 Plugin 'sumpygump/php-documentor-vim'
 Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'tmhedberg/matchit'
 
 " Vundle end 
 call vundle#end()
