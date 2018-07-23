@@ -27,6 +27,7 @@ Plugin 'prettier/vim-prettier'
 Plugin 'sumpygump/php-documentor-vim'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'tmhedberg/matchit'
+Plugin 'plasticboy/vim-markdown'
 
 " Vundle end 
 call vundle#end()
@@ -173,3 +174,7 @@ hi Comment gui=italic
 hi htmlArg cterm=italic
 hi Comment cterm=italic
 " hi Type    cterm=italic
+
+" Markdown settings 
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_conceal = 0
