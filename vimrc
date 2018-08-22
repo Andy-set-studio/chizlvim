@@ -153,6 +153,10 @@ let g:ctrlp_custom_ignore = {
 
 " Prettier settings
 let g:prettier#config#tab_width = 4
+let g:prettier#config#single_quote = 'true'
+let g:prettier#config#bracket_spacing = 'false'
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
 
 " Tweak clipboard 
 :set clipboard=unnamed
