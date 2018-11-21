@@ -156,7 +156,7 @@ let g:prettier#config#tab_width = 4
 let g:prettier#config#single_quote = 'true'
 let g:prettier#config#bracket_spacing = 'false'
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.json,*.md,*.vue,*.html,*.css,*.scss PrettierAsync
+autocmd BufWritePre *.js,*.jsx,*.json,*.md,*.vue,*.css,*.scss PrettierAsync
 
 " Tweak clipboard 
 :set clipboard=unnamed
