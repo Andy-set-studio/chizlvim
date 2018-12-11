@@ -159,7 +159,7 @@ let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.json,*.md,*.vue,*.css,*.scss PrettierAsync
 
 " Tweak clipboard 
-:set clipboard=unnamed
+set clipboard=unnamed
 
 " Enable omnicomplete
 filetype plugin on
@@ -185,3 +185,7 @@ let g:vim_markdown_conceal = 0
 
 " Emmet 
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+
+" Allow project specific vimrc files
+set exrc
+set secure
