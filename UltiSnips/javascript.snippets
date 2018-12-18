@@ -1,33 +1,16 @@
 snippet rc "Create a stub React component" 
-/*------------------------------------*\
-    MODULES
-\*------------------------------------*/
-import React from 'react';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
-class $1 extends React.Component {
-
-    constructor(props) {
-        super(props);
-    }
-
-    componentWillMount() {
-        let self = this;
-        
-        // Set default state 
-        self.setState({
-        });
-    }
-
-    render() {
-        let self = this;
-
-        return (
-            <div></div>
-        );
-    }
+class $1 extends Component {
+  render() {
+    return <div />
+  }
 }
 
-export default $1;
+$1.propTypes = {}
+
+export default $1
 endsnippet
 
 snippet fn "Create a function with a self reference"                                                                                                                                                                                                               
