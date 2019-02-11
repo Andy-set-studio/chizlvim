@@ -57,9 +57,9 @@ set undolevels=1000
 set backspace=indent,eol,start
 
 " Set tab settings
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set expandtab
 
 " Set syntastic settings
