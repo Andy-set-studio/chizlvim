@@ -153,7 +153,7 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 " Prettier settings
-let g:prettier#config#tab_width = 4
+let g:prettier#config#tab_width = 2
 let g:prettier#config#single_quote = 'true'
 let g:prettier#config#bracket_spacing = 'false'
 let g:prettier#autoformat = 0
