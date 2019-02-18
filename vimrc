@@ -27,6 +27,7 @@ Plugin 'prettier/vim-prettier'
 Plugin 'sumpygump/php-documentor-vim'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'alexlafroscia/postcss-syntax.vim'
 
 " Vundle end 
 call vundle#end()
