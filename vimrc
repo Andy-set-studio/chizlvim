@@ -163,6 +163,7 @@ autocmd BufWritePre *.js,*.jsx,*.json,*.md,*.vue,*.css,*.scss PrettierAsync
 
 " Vue settings
 autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
+let g:vue_disable_pre_processors=1
 
 " Tweak clipboard 
 set clipboard=unnamed
