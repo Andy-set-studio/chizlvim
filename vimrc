@@ -115,9 +115,6 @@ autocmd BufNewFile,BufRead *.html.twig   set syntax=htmldjango
 autocmd BufNewFile,BufRead *.njk   set syntax=htmldjango
 autocmd BufNewFile,BufRead *.html   set syntax=htmldjango
 
-" Set CSS files to use SCSS syntax
-autocmd BufNewFile,BufRead *.css set syntax=scss
-
 " Keymappings
 
 " Toggle NERDTree
