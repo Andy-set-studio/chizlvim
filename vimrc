@@ -27,6 +27,8 @@ Plugin 'prettier/vim-prettier'
 Plugin 'sumpygump/php-documentor-vim'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'alexlafroscia/postcss-syntax.vim'
+Plugin 'posva/vim-vue'
 
 " Vundle end 
 call vundle#end()
@@ -150,11 +152,15 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 " Prettier settings
-let g:prettier#config#tab_width = 4
+let g:prettier#config#tab_width = 2
 let g:prettier#config#single_quote = 'true'
 let g:prettier#config#bracket_spacing = 'false'
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.json,*.md,*.vue,*.css,*.scss PrettierAsync
+
+" Vue settings
+autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
+let g:vue_disable_pre_processors=1
 
 " Tweak clipboard 
 set clipboard=unnamed
