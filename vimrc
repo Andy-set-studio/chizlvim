@@ -29,6 +29,7 @@ Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'alexlafroscia/postcss-syntax.vim'
 Plugin 'posva/vim-vue'
+Plugin 'Quramy/vim-js-pretty-template'
 
 " Vundle end 
 call vundle#end()
@@ -204,3 +205,8 @@ vnoremap <leader>d "_d
 " replace currently selected text with default register
 " without yanking it
 vnoremap <leader>p "_dP
+
+" Tagged template literal syntax
+call jspretmpl#register_tag('html', 'html')
+autocmd FileType javascript JsPreTmpl
+autocmd FileType javascript.jsx JsPreTmpl
