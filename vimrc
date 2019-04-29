@@ -29,7 +29,6 @@ Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'alexlafroscia/postcss-syntax.vim'
 Plugin 'posva/vim-vue'
-Plugin 'cdata/vim-tagged-template'
 
 " Vundle end 
 call vundle#end()
@@ -198,9 +197,10 @@ imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 set exrc
 set secure
 
-" Tagged templates setup 
-let g:taggedtemplate#tagSyntaxMap = {
-  \ "html": "html",
-  \ "md":   "markdown",
-  \ "css":  "css" }
-autocmd FileType javascript,typescript : call taggedtemplate#applySyntaxMap()
+" delete without yanking
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
+
+" replace currently selected text with default register
+" without yanking it
+vnoremap <leader>p "_dP
