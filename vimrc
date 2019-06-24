@@ -112,6 +112,7 @@ inoremap {<CR> {<CR>}<Esc>O<BS><Tab>
 " Set syntastic to passive mode for html. Shortcut ctrl+w E will make it active: https://stackoverflow.com/a/21434697/2219969
 let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': [],'passive_filetypes': ['html'] }
 nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
+map <C-n> :SyntasticToggleMode<CR>
 
 " Set HTML syntax for odd filetypes
 autocmd BufNewFile,BufRead *.html.twig   set syntax=htmldjango
