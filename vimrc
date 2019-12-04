@@ -39,7 +39,7 @@ filetype plugin indent on
 colorscheme ChizlPanda
 
 " Airline theme
-let g:airline_theme='sierra'
+let g:airline_theme='tomorrow'
 
 " Set core editor settings
 set number
