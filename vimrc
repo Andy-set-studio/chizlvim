@@ -107,7 +107,7 @@ let html_no_rendering=1
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " When a curly brace pair is added, add a new tabbed line inside them
-inoremap {<CR> {<CR>}<Esc>O<BS><Tab>
+"inoremap {<CR> {<CR>}<Esc>O<BS><Tab>
 
 " Set syntastic to passive mode for html. Shortcut ctrl+w E will make it active: https://stackoverflow.com/a/21434697/2219969
 let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': [],'passive_filetypes': ['html'] }
@@ -166,7 +166,6 @@ let g:vue_disable_pre_processors=1
 
 " Tweak clipboard 
 set clipboard=unnamed
-set paste!
 
 " Enable omnicomplete
 filetype plugin on
@@ -209,3 +208,6 @@ vnoremap <leader>p "_dP
 call jspretmpl#register_tag('html', 'html')
 autocmd FileType javascript JsPreTmpl
 autocmd FileType javascript.jsx JsPreTmpl
+
+" Fuck indenting automatically. That’s what prettier is for
+:filetype indent off
