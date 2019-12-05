@@ -166,6 +166,7 @@ let g:vue_disable_pre_processors=1
 
 " Tweak clipboard 
 set clipboard=unnamed
+set paste!
 
 " Enable omnicomplete
 filetype plugin on
