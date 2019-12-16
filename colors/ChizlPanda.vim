@@ -399,6 +399,15 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("htmlArg", s:orange, "", "")
 	call <SID>X("htmlScriptTag", s:red, "", "")
 	call <SID>X("djangoVarError", s:foreground, s:background, "")
+  
+  " JSX Highlighting 
+  call <SID>X("jsxAttribKeyword", s:orange, "", "")
+  call <SID>X("jsxAttrib", s:orange, "", "")
+  call <SID>X("jsxClosePunct", s:red, "", "")
+  call <SID>X("jsxOpenPunct", s:red, "", "")
+  call <SID>X("jsxCloseString", s:red, "", "") 
+  call <SID>X("jsxComponentName", s:red, "", "")
+
 
     " CSS Highlighting 
     call <SID>X("cssBraces", s:foreground, "", "")

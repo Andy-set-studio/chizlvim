@@ -180,10 +180,10 @@ map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans
 " Make operator mono do its thing
 hi htmlArg gui=italic
 hi Comment gui=italic
-" hi Type    gui=italic
+hi jsxAttrib gui=italic
 hi htmlArg cterm=italic
 hi Comment cterm=italic
-" hi Type    cterm=italic
+hi jsxAttrib cterm=italic
 
 " Markdown settings 
 let g:vim_markdown_folding_disabled = 1
