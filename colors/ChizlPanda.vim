@@ -406,7 +406,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("jsxClosePunct", s:red, "", "")
   call <SID>X("jsxOpenPunct", s:red, "", "")
   call <SID>X("jsxCloseString", s:red, "", "") 
-  call <SID>X("jsxComponentName", s:red, "", "")
+  call <SID>X("jsxComponentName", s:aqua, "", "")
 
 
     " CSS Highlighting 
