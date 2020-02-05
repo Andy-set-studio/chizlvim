@@ -120,10 +120,10 @@ autocmd BufNewFile,BufRead *.njk   set syntax=htmldjango
 autocmd BufNewFile,BufRead *.html   set syntax=htmldjango
 
 " Set text wrap and spell check for markdown files
-autocmd BufRead,BufNewFile *.md setlocal textwidth=80
-autocmd BufRead,BufNewFile *.md setlocal setlocal wrap
-autocmd BufRead,BufNewFile *.md setlocal spell
-autocmd BufRead,BufNewFile *.md setlocal spelllang=en_gb
+autocmd BufNewFile,BufRead *.md setlocal textwidth=80
+autocmd BufNewFile,BufRead *.md setlocal wrap
+autocmd BufNewFile,BufRead *.md setlocal spell
+autocmd BufNewFile,BufRead *.md setlocal spelllang=en_gb
 
 " Keymappings
 
