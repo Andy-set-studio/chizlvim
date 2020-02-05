@@ -119,6 +119,12 @@ autocmd BufNewFile,BufRead *.html.twig   set syntax=htmldjango
 autocmd BufNewFile,BufRead *.njk   set syntax=htmldjango
 autocmd BufNewFile,BufRead *.html   set syntax=htmldjango
 
+" Set text wrap and spell check for markdown files
+autocmd BufRead,BufNewFile *.md setlocal textwidth=80
+autocmd BufRead,BufNewFile *.md setlocal setlocal wrap
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd BufRead,BufNewFile *.md setlocal spelllang=en_gb
+
 " Keymappings
 
 " Toggle NERDTree
