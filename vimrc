@@ -26,7 +26,6 @@ Plugin 'mxw/vim-jsx'
 Plugin 'prettier/vim-prettier'
 Plugin 'sumpygump/php-documentor-vim'
 Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'plasticboy/vim-markdown'
 Plugin 'alexlafroscia/postcss-syntax.vim'
 Plugin 'posva/vim-vue'
 Plugin 'Quramy/vim-js-pretty-template'
@@ -119,12 +118,6 @@ autocmd BufNewFile,BufRead *.html.twig   set syntax=htmldjango
 autocmd BufNewFile,BufRead *.njk   set syntax=htmldjango
 autocmd BufNewFile,BufRead *.html   set syntax=htmldjango
 
-" Set text wrap and spell check for markdown files
-autocmd BufNewFile,BufRead *.md setlocal textwidth=80
-autocmd BufNewFile,BufRead *.md setlocal wrap
-autocmd BufNewFile,BufRead *.md setlocal spell
-autocmd BufNewFile,BufRead *.md setlocal spelllang=en_gb
-
 " Keymappings
 
 " Toggle NERDTree
@@ -158,6 +151,7 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 " Prettier settings
 let g:prettier#config#tab_width = 2
@@ -190,10 +184,6 @@ hi jsxAttrib gui=italic
 hi htmlArg cterm=italic
 hi Comment cterm=italic
 hi jsxAttrib cterm=italic
-
-" Markdown settings 
-let g:vim_markdown_folding_disabled = 1
-let g:vim_markdown_conceal = 0
 
 " Emmet 
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
