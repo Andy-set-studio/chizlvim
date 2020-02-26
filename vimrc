@@ -97,6 +97,9 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
+" Set Markdown to be pain text 
+autocmd FileType markdown set ft=text
+
 " Syntax overrides
 
 " Prevent underlines in markup
