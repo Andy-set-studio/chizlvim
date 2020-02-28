@@ -210,3 +210,8 @@ autocmd FileType javascript.jsx JsPreTmpl
 
 " Fuck indenting automatically. That’s what prettier is for
 :filetype indent off
+
+" Auto-close brackets
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
