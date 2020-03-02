@@ -212,6 +212,5 @@ autocmd FileType javascript.jsx JsPreTmpl
 :filetype indent off
 
 " Auto-close brackets
-inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
