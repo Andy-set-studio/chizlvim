@@ -214,3 +214,6 @@ autocmd FileType javascript.jsx JsPreTmpl
 " Auto-close brackets
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
+
+" Matchit enabled so HTML tags can be matched with %
+runtime macros/matchit.vim
