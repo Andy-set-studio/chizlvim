@@ -29,6 +29,7 @@ Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'alexlafroscia/postcss-syntax.vim'
 Plugin 'posva/vim-vue'
 Plugin 'Quramy/vim-js-pretty-template'
+Plugin 'junegunn/goyo.vim'
 
 " Vundle end 
 call vundle#end()
@@ -217,3 +218,6 @@ inoremap {;<CR> {<CR>};<ESC>O
 
 " Matchit enabled so HTML tags can be matched with %
 runtime macros/matchit.vim
+
+" Spell check for markdown files
+autocmd BufRead,BufNewFile *.md setlocal spell
