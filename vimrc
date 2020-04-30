@@ -29,7 +29,6 @@ let g:airline_theme='tomorrow'
 " Set core editor settings
 set number
 set nowrap
-set showbreak=+++
 set textwidth=0
 set showmatch
 set visualbell
@@ -78,7 +77,7 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 let html_no_rendering=1
 
 " Prevent comment chars been added on new line creation
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+" autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Set syntastic to passive mode for html. Shortcut ctrl+w E will make it active: https://stackoverflow.com/a/21434697/2219969
 let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': [],'passive_filetypes': ['html'] }
@@ -152,3 +151,5 @@ inoremap {;<CR> {<CR>};<ESC>O
 " Matchit enabled so HTML tags can be matched with %
 runtime macros/matchit.vim
 
+" Markdown config 
+autocmd FileType markdown setlocal wrap linebreak nolist textwidth=70 wm=2 foldcolumn=12 spell spelllang=en_gb 
