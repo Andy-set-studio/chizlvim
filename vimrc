@@ -219,5 +219,3 @@ inoremap {;<CR> {<CR>};<ESC>O
 " Matchit enabled so HTML tags can be matched with %
 runtime macros/matchit.vim
 
-" Spell check for markdown files
-autocmd BufRead,BufNewFile *.md setlocal spell
