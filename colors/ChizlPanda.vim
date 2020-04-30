@@ -27,6 +27,7 @@ if !has("gui_running")
 end
 
 hi clear
+
 syntax reset
 
 let g:colors_name = "ChizlPanda"
@@ -377,16 +378,27 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("jsNull", s:red, "", "")
 	call <SID>X("jsFunction", s:pink, "", "")
     
-    " Django highlighting 
-    call <SID>X("djangoTagBlock", s:foreground, "", "")
-    call <SID>X("djangoStatement", s:pink, "", "")
-    call <SID>X("djangoVarBlock", s:foreground, "", "")
+  " Django highlighting 
+  call <SID>X("djangoTagBlock", s:foreground, "", "")
+  call <SID>X("djangoStatement", s:pink, "", "")
+  call <SID>X("djangoVarBlock", s:foreground, "", "")
 
-    " (S)CSS highlighting 
-    call <SID>X("scssAmpersand", s:foreground, "", "")
-    call <SID>X("scssInclude", s:orange, "", "")
-    call <SID>X("cssPseudoClassId", s:red, "", "")
-    
+  " (S)CSS highlighting 
+  call <SID>X("scssAmpersand", s:foreground, "", "")
+  call <SID>X("scssInclude", s:orange, "", "")
+  call <SID>X("cssPseudoClassId", s:red, "", "")
+  
+  " Spelling 
+  call <SID>X("SpellBad", s:red, s:background, "")
+  call <SID>X("SpellCap", s:blue, s:background, "")
+  call <SID>X("SpellRare", s:green, s:background, "")
+  call <SID>X("SpellLocal", s:orange, s:background, "")
+
+  hi SpellBad cterm=underline
+  hi SpellCap cterm=underline
+  hi SpellRare cterm=underline
+  hi SpellLocal cterm=underline
+
 	" CoffeeScript Highlighting
 	call <SID>X("coffeeRepeat", s:purple, "", "")
 	call <SID>X("coffeeConditional", s:purple, "", "")
@@ -408,9 +420,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("jsxCloseString", s:red, "", "") 
   call <SID>X("jsxComponentName", s:aqua, "", "")
 
-
-    " CSS Highlighting 
-    call <SID>X("cssBraces", s:foreground, "", "")
+  " CSS Highlighting 
+  call <SID>X("cssBraces", s:foreground, "", "")
 
 	" Diff Highlighting
 	call <SID>X("diffAdd", "", "4c4e39", "")
@@ -532,4 +543,5 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	delf <SID>grey_colour
 	delf <SID>grey_level
 	delf <SID>grey_number
+
 endif

@@ -153,3 +153,6 @@ runtime macros/matchit.vim
 
 " Markdown config 
 autocmd FileType markdown setlocal wrap linebreak nolist textwidth=70 wm=2 foldcolumn=12 spell spelllang=en_gb 
+
+" Prevent comment chars been added on new line creation
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
