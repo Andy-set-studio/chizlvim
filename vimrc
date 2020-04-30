@@ -8,28 +8,13 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-syntastic/syntastic'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'hail2u/vim-css3-syntax'
-Plugin 'godlygeek/tabular'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'yegappan/mru'
-Plugin 'Yggdroot/indentLine'
-Plugin 'chrisbra/Colorizer'
 Plugin 'heavenshell/vim-jsdoc'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
 Plugin 'prettier/vim-prettier'
-Plugin 'sumpygump/php-documentor-vim'
 Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'alexlafroscia/postcss-syntax.vim'
-Plugin 'posva/vim-vue'
-Plugin 'Quramy/vim-js-pretty-template'
-Plugin 'junegunn/goyo.vim'
 
 " Vundle end 
 call vundle#end()
@@ -77,29 +62,15 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_html_tidy_quiet_messages = { 'level': 'warnings' }
 let g:syntastic_javascript_checkers=['eslint']
 
-" Set vim-jsx settings
-let g:jsx_ext_required = 0
-highlight link xmlEndTag xmlTag
-
 " JS setting 
 let g:javascript_plugin_jsdoc = 1
 let g:jsdoc_enable_es6=1
-
-" Set UltiSnips settings
-let g:UltiSnipsExpandTrigger='<tab>'
-let g:UltiSnipsJumpForwardTrigger='<c-b>'
-let g:UltiSnipsJumpBackwardTrigger='<c-z>'
-let g:UltiSnipsEditSplit='vertical'
-let g:UltiSnipsSnippetDirectories=['UltiSnips']
 
 " Set autocomplete and filetype settings
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-
-" Set Markdown to be pain text 
-autocmd FileType markdown set ft=text
 
 " Syntax overrides
 
@@ -108,9 +79,6 @@ let html_no_rendering=1
 
 " Prevent comment chars been added on new line creation
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-
-" When a curly brace pair is added, add a new tabbed line inside them
-"inoremap {<CR> {<CR>}<Esc>O<BS><Tab>
 
 " Set syntastic to passive mode for html. Shortcut ctrl+w E will make it active: https://stackoverflow.com/a/21434697/2219969
 let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': [],'passive_filetypes': ['html'] }
@@ -127,22 +95,11 @@ autocmd BufNewFile,BufRead *.html   set syntax=htmldjango
 " Toggle NERDTree
 map <C-b> :NERDTreeToggle<CR>
 
-" Run Tabular align function. After you need to provide the separator such as = or : or =>
-map <C-a> :Tab /
-
 " Show most recently opened/edited files
 map <C-m> :MRU<CR>
 
-" Highlight document colors 
-map <C-h> :ColorHighlight<CR>
-
 " Add a JS Doc
 map <C-j> :JsDoc<CR>
-
-" Add a PHP doc
-au BufRead,BufNewFile *.php inoremap <buffer> <C-j> :call PhpDoc()<CR>
-au BufRead,BufNewFile *.php nnoremap <buffer> <C-j> :call PhpDoc()<CR>
-au BufRead,BufNewFile *.php vnoremap <buffer> <C-j> :call PhpDocRange()<CR>
 
 " NERDCommenter 
 let g:NERDSpaceDelims = 1
@@ -164,10 +121,6 @@ let g:prettier#config#bracket_spacing = 'false'
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.json,*.md,*.vue,*.css,*.scss PrettierAsync
 
-" Vue settings
-autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
-let g:vue_disable_pre_processors=1
-
 " Tweak clipboard 
 set clipboard=unnamed
 
@@ -188,26 +141,6 @@ hi jsxAttrib gui=italic
 hi htmlArg cterm=italic
 hi Comment cterm=italic
 hi jsxAttrib cterm=italic
-
-" Emmet 
-imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
-
-" Allow project specific vimrc files
-set exrc
-set secure
-
-" delete without yanking
-nnoremap <leader>d "_d
-vnoremap <leader>d "_d
-
-" replace currently selected text with default register
-" without yanking it
-vnoremap <leader>p "_dP
-
-" Tagged template literal syntax
-call jspretmpl#register_tag('html', 'html')
-autocmd FileType javascript JsPreTmpl
-autocmd FileType javascript.jsx JsPreTmpl
 
 " Fuck indenting automatically. That’s what prettier is for
 :filetype indent off
