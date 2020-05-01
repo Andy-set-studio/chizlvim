@@ -12,7 +12,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'yegappan/mru'
-Plugin 'heavenshell/vim-jsdoc'
+Plugin 'hankchizljaw/vim-jsdoc'
 Plugin 'prettier/vim-prettier'
 Plugin 'cakebaker/scss-syntax.vim'
 
