@@ -15,6 +15,7 @@ Plugin 'yegappan/mru'
 Plugin 'hankchizljaw/vim-jsdoc'
 Plugin 'prettier/vim-prettier'
 Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'isRuslan/vim-es6'
 
 " Vundle end 
 call vundle#end()
