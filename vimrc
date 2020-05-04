@@ -159,4 +159,4 @@ autocmd FileType markdown setlocal wrap linebreak nolist textwidth=70 wm=2 foldc
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " When a curly brace pair is added, add a new tabbed line inside them
-autocmd FileType scss inoremap {<CR> {<CR><CR>}<Esc>O<BS><Tab>
+autocmd FileType scss inoremap {<CR> {<CR>}<Esc>O<BS><Tab><Tab>
