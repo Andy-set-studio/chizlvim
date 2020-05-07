@@ -390,6 +390,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("scssInclude", s:orange, "", "")
   call <SID>X("cssPseudoClassId", s:red, "", "")
   call <SID>X("scssVariable", s:yellow, "", "")
+  call <SID>X("scssFunctionName", s:blue, "", "")
   
   " Spelling 
   call <SID>X("SpellBad", s:red, s:background, "")
