@@ -16,6 +16,7 @@ Plugin 'hankchizljaw/vim-jsdoc'
 Plugin 'prettier/vim-prettier'
 Plugin 'hankchizljaw/scss-syntax.vim'
 Plugin 'isRuslan/vim-es6'
+Plugin 'scrooloose/nerdcommenter'
 
 " Vundle end 
 call vundle#end()
