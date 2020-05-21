@@ -372,6 +372,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("javascriptStatement", s:pink, "", "")
   call <SID>X("javaScriptIdentifier", s:orange, "", "")
   call <SID>X("javaScriptConditional", s:pink, "", "")
+  call <SID>X("javaScriptExceptions", s:pink, "", "")
 	call <SID>X("jsStorageClass", s:pink, "", "")
 	call <SID>X("jsThis", s:pink, "", "")
   call <SID>X("jsOperator", s:foreground, "", "")
@@ -379,6 +380,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("jsClassMethodType", s:pink, "", "")
 	call <SID>X("jsNull", s:red, "", "")
 	call <SID>X("jsFunction", s:pink, "", "")
+  call <SID>X("javaScriptFuncExp", s:yellow, "", "")
     
   " Django highlighting 
   call <SID>X("djangoTagBlock", s:foreground, "", "")
