@@ -27,6 +27,7 @@ colorscheme Soot
 
 " Airline theme
 let g:airline_theme='base16_grayscale'
+let g:airline#extensions#whitespace#enabled = 0
 
 " Set core editor settings
 set number
