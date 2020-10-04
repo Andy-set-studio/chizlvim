@@ -17,6 +17,7 @@ Plugin 'prettier/vim-prettier'
 Plugin 'hankchizljaw/scss-syntax.vim'
 Plugin 'isRuslan/vim-es6'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'keith/swift.vim'
 
 " Vundle end 
 call vundle#end()
@@ -67,6 +68,10 @@ let g:syntastic_javascript_checkers=['eslint']
 " JS setting 
 let g:javascript_plugin_jsdoc = 1
 let g:jsdoc_enable_es6=1
+
+" Swift stuff
+let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
+
 
 " Set autocomplete and filetype settings
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
