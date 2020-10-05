@@ -70,7 +70,8 @@ let g:javascript_plugin_jsdoc = 1
 let g:jsdoc_enable_es6=1
 
 " Swift stuff
-let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
+let g:syntastic_swift_swiftlint_use_defaults = 1
+let g:syntastic_swift_checkers = ['swiftlint', 'swiftpm']
 
 
 " Set autocomplete and filetype settings
