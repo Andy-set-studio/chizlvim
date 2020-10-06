@@ -17,6 +17,7 @@ Plugin 'prettier/vim-prettier'
 Plugin 'hankchizljaw/scss-syntax.vim'
 Plugin 'isRuslan/vim-es6'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'keith/swift.vim'
 
 " Vundle end 
 call vundle#end()
@@ -64,9 +65,12 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_html_tidy_quiet_messages = { 'level': 'warnings' }
 let g:syntastic_javascript_checkers=['eslint']
 
-" JS setting 
+" JS settings 
 let g:javascript_plugin_jsdoc = 1
 let g:jsdoc_enable_es6=1
+
+" Swift settings
+let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
 
 " Set autocomplete and filetype settings
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
@@ -91,6 +95,9 @@ map <C-n> :SyntasticToggleMode<CR>
 autocmd BufNewFile,BufRead *.html.twig   set syntax=htmldjango
 autocmd BufNewFile,BufRead *.njk   set syntax=htmldjango
 autocmd BufNewFile,BufRead *.html   set syntax=htmldjango
+
+" Set Swift indents and stuff 
+autocmd FileType swift setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
 " Keymappings
 
