@@ -117,11 +117,10 @@ let g:NERDCompactSexyComs = 1
 " CtrlP settings
 set wildignore+=*/tmp/*,*/node_modules/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
-  \ 'link': 'some_bad_symbolic_links',
+  \ 'dir':  '\.git$\|\.yardoc\|node_modules\|log\|wp-admin\|wp-includes\|tmp$',
+  \ 'file': '\.so$\|\.dat$|\.DS_Store$'
   \ }
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+" let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 " Prettier settings
 let g:prettier#config#tab_width = 2
