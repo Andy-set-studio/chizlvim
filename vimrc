@@ -105,7 +105,7 @@ autocmd FileType swift setlocal tabstop=2 softtabstop=2 shiftwidth=2
 map <C-b> :NERDTreeToggle<CR>
 
 " Show most recently opened/edited files
-map <C-m> :MRU<CR>
+nmap <CR> :MRU<CR>
 
 " Add a JS Doc
 map <C-j> :JsDoc<CR>
