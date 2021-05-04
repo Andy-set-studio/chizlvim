@@ -98,6 +98,7 @@ map <C-n> :SyntasticToggleMode<CR>
 " Set HTML syntax for odd filetypes
 autocmd BufNewFile,BufRead *.html.twig   set syntax=htmldjango
 autocmd BufNewFile,BufRead *.njk   set syntax=htmldjango
+autocmd BufNewFile,BufRead *.twig   set syntax=htmldjango
 autocmd BufNewFile,BufRead *.html   set syntax=htmldjango
 
 " Set Swift indents and stuff 
