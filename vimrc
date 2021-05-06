@@ -50,6 +50,7 @@ set smarttab
 set ruler
 set undolevels=1000
 set backspace=indent,eol,start
+set noswapfile
 
 " Set tab settings
 set tabstop=2
@@ -131,6 +132,7 @@ let g:ctrlp_custom_ignore = {
 let g:prettier#config#tab_width = 2
 let g:prettier#config#single_quote = 'true'
 let g:prettier#config#bracket_spacing = 'false'
+let g:prettier#config#tailing_comma = 'false'
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.json,*.md,*.vue,*.css,*.scss PrettierAsync
 
