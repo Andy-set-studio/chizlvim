@@ -30,6 +30,11 @@ colorscheme ChizlPanda
 let g:airline_theme='base16_grayscale'
 let g:airline#extensions#whitespace#enabled = 0
 
+" Fonts n shit
+set guifont=Operator\ Mono\ Book:h22
+set linespace=2
+
+
 " Tweaks 
 set visualbell t_vb=    " turn off error beep/flash
 set novisualbell        " turn off visual bell
