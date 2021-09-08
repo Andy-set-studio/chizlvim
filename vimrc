@@ -24,7 +24,7 @@ call vundle#end()
 filetype plugin indent on
 
 " Set color scheme
-colorscheme ChizlPanda
+colorscheme Soot
 
 " Airline theme
 let g:airline_theme='base16_grayscale'
