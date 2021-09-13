@@ -139,7 +139,7 @@ let g:prettier#config#single_quote = 'true'
 let g:prettier#config#bracket_spacing = 'false'
 let g:prettier#config#tailing_comma = 'false'
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.json,*.md,*.vue,*.css,*.scss PrettierAsync
+autocmd BufWritePre *.js,*.jsx,*.json,*.md,*.vue,*.css,*.scss Prettier
 
 " Tweak clipboard 
 set clipboard=unnamed

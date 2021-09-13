@@ -1,6 +1,6 @@
 " Default GUI Colours
 let s:foreground = "f3f3f3"
-let s:background = "141414"
+let s:background = "252525"
 let s:selection = "333333"
 let s:line = "282a2e"
 let s:comment = "818181"
@@ -11,7 +11,7 @@ let s:window = "4d5057"
 
 " Console 256 Colours
 if !has("gui_running")
-	let s:background = "212121"
+	let s:background = "252525"
 	let s:window = "5e5e5e"
 	let s:line = "3a3a3a"
 	let s:selection = "585858"
