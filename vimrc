@@ -12,7 +12,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'yegappan/mru'
-Plugin 'hankchizljaw/vim-jsdoc'
 Plugin 'prettier/vim-prettier'
 Plugin 'hankchizljaw/scss-syntax.vim'
 Plugin 'isRuslan/vim-es6'
@@ -75,10 +74,6 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_html_tidy_quiet_messages = { 'level': 'warnings' }
 let g:syntastic_javascript_checkers=['eslint']
 
-" JS settings 
-let g:javascript_plugin_jsdoc = 1
-let g:jsdoc_enable_es6=1
-
 " Swift settings
 let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
 
@@ -117,9 +112,6 @@ map <C-b> :NERDTreeToggle<CR>
 
 " Show most recently opened/edited files
 nmap <CR> :MRU<CR>
-
-" Add a JS Doc
-map <C-j> :JsDoc<CR>
 
 " NERDCommenter 
 let g:NERDSpaceDelims = 1
